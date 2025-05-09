@@ -7,23 +7,23 @@
 
 vl_verefiicar = int(input("Digite o valor desejeado para checagem: " ))
 
-x = 0
 sequencia_fibonacci_one = 0
 sequencia_fibonacci_twe = 1
 sequencia_fibonacci_three = 0
-sequencia_list = [1]
+sequencia_list = []
 
 while vl_verefiicar > sequencia_fibonacci_one:
     sequencia_fibonacci_three = sequencia_fibonacci_one
     sequencia_fibonacci_one += sequencia_fibonacci_twe
     sequencia_fibonacci_twe = sequencia_fibonacci_three
 
-    print(sequencia_fibonacci_one)
     sequencia_list.append(sequencia_fibonacci_one)
 
 
-if vl_verefiicar in sequencia_fibonacci_one:
+if vl_verefiicar in sequencia_list:
     print(f"Valor inserido {vl_verefiicar} está na lista de Fibonacci")
+else: 
+    print(f"Valor inserido {vl_verefiicar} não está presente na lista de Fibonacci")
 
 
 
